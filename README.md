@@ -20,7 +20,7 @@ Pembuatan kelas Entitas (`TokoKomikJadoel.java`) yang memetakan tabel database d
 
   <img width="576" height="451" alt="image" src="https://github.com/user-attachments/assets/6dc12bfc-b6ab-4682-9c33-bb1f7dc7cc03" />
 
-* **Penyelesaian:** Klik **Next* hinnga menemukan **Finish**
+* **Penyelesaian:** Klik **Next** hinnga menemukan **Finish**
 
 ### 2. Hasil Otomatisasi
 

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LaporanTokoKomik" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e4655838-1991-4bef-b290-daef5d9cce8e">
+	<property name="ireport.zoom" value="1.1000000000000005"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="TanggalCetak" class="java.util.Date" isForPrompting="false">
+		<defaultValueExpression><![CDATA[new java.util.Date()]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT id, judul, pengarang, tahun, genre FROM toko_komik_jadoel ORDER BY id]]>
+	</queryString>
+	<field name="id" class="java.lang.String"/>
+	<field name="judul" class="java.lang.String"/>
+	<field name="pengarang" class="java.lang.String"/>
+	<field name="tahun" class="java.lang.String"/>
+	<field name="genre" class="java.lang.String"/>
+	<title>
+		<band height="90">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="90" backcolor="#0099CC" uuid="512dda47-c916-4c25-b43e-a67b6096a9a2"/>
+			</rectangle>
+			<image scaleImage="RetainShape" hAlign="Left" vAlign="Middle">
+				<reportElement x="29" y="8" width="82" height="74" uuid="f35ac87d-b023-4bf4-9aee-7ad0adfe457b"/>
+				<imageExpression><![CDATA["C:/Users/Husain/OneDrive/Bismillah/NetBeansProjects/OOP-Pertemuan-Kesepuluh-main/PertemuanKesembilan/src/pertemuankesembilan/Gemini_Generated_Image_pht6jmpht6jmpht6.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="137" y="8" width="361" height="38" forecolor="#FFCC00" backcolor="#FFCC00" uuid="3aaa1f5c-8486-4cd3-8d4d-1496f6c373bd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Algerian" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOKO KOMIK JADOEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="167" y="44" width="288" height="38" forecolor="#FFCC00" backcolor="#FFCC00" uuid="11426f41-4901-442c-8567-64270f5f9838"/>
+				<textElement textAlignment="Center">
+					<font fontName="Monospaced" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Jl. Dr. Ir. H. Soekarno No.682 60294 Gunung Anyar Jawa Timur]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch">
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle" isLazy="true">
+				<reportElement mode="Transparent" x="0" y="0" width="555" height="1" uuid="41b80abf-bc97-4f74-be7e-0696a04640b2"/>
+				<imageExpression><![CDATA["C:/Users/Husain/OneDrive/Bismillah/NetBeansProjects/OOP-Pertemuan-Kesepuluh-main/PertemuanKesembilan/src/pertemuankesembilan/Gemini_Generated_Image_pht6jmpht6jmpht6.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="30" backcolor="#A7C7E7" uuid="0c2a8aee-40e0-4014-bbd3-a50be5699d53"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="40" height="30" uuid="e87dc6f0-fdfe-407a-8a95-aa5e0e2ad9ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="0" width="190" height="30" uuid="53594c15-ddff-437f-840c-6283952a5933"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[JUDUL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="130" height="30" uuid="e5ab47e0-09a6-4246-9a65-c1c5e098ac88"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PENGARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="60" height="30" uuid="0b7af944-4099-4997-9ad8-49d9fe4104f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TAHUN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="135" height="30" uuid="34ec41bf-fd80-4e39-8766-94b7fcfdd10b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[GENRE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="40" y="0" width="1" height="30" forecolor="#666666" uuid="19e8dd47-134a-4f68-8f11-c18701a39faa"/>
+			</line>
+			<line>
+				<reportElement x="230" y="0" width="1" height="30" forecolor="#666666" uuid="e3c1efb4-8220-4519-87ba-ecfd43bbb66c"/>
+			</line>
+			<line>
+				<reportElement x="360" y="0" width="1" height="30" forecolor="#666666" uuid="03ee9f41-63db-4e7d-b65a-63eccbd1612e"/>
+			</line>
+			<line>
+				<reportElement x="420" y="0" width="1" height="30" forecolor="#666666" uuid="c303cb1e-ff47-48e4-98bb-876c9e941728"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement x="0" y="19" width="555" height="1" forecolor="#DDDDDD" uuid="dfdcd94f-22f3-431c-bcd7-2934507baf95"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="40" height="20" uuid="65964c0e-b27e-48de-a072-1ae62dcd600b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="0" width="185" height="20" uuid="b5780379-8a04-4b9e-86e3-ec6313127f5c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{judul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="130" height="20" uuid="405c876e-d7d2-4f38-9955-633eba914473"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pengarang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="60" height="20" uuid="70b4e646-5536-4285-9b7b-98fc5908a815"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tahun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="0" width="130" height="20" uuid="17c44fd5-acb5-4311-8d0a-fbaa060fe83e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{genre}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="40" y="0" width="1" height="20" forecolor="#DDDDDD" uuid="bcf445c9-e1b7-44c3-ad4d-ca96e859b37f"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="230" y="0" width="1" height="20" forecolor="#DDDDDD" uuid="5ef8b08d-747a-4fac-90be-d35589bdd1fd"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="360" y="0" width="1" height="20" forecolor="#DDDDDD" uuid="f85dd157-da51-4530-962d-b276311d8020"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="420" y="0" width="1" height="20" forecolor="#DDDDDD" uuid="badb1aaf-c498-44aa-9c2c-064e6f6c1fdb"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="30">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="5" width="555" height="25" backcolor="#A7C7E7" uuid="7549b4bd-4089-4c30-aab5-e0924d28284c"/>
+			</rectangle>
+			<textField>
+				<reportElement x="455" y="5" width="100" height="20" forecolor="#1E3A8A" uuid="05ab3f36-0ea5-419b-958e-05cd022a64ca"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Halaman " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="5" width="200" height="20" forecolor="#1E3A8A" uuid="e6df0759-0b90-4689-872a-14c602266374"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Data Inventaris Toko Komik Jadoel]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="140">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" backcolor="#FFD700" uuid="f948a2f5-bcf7-4885-ada1-86227655c786"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="-111" y="0" width="200" height="20" forecolor="#1E3A8A" uuid="e4a1bb3f-3232-4550-a86e-515a0333325e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Komik tersedia:]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="89" y="0" width="100" height="20" forecolor="#1E3A8A" uuid="d9c6163e-c832-4fe5-8b0e-70021ce471b7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="395" y="40" width="50" height="20" uuid="1d0e53a7-3382-45c5-b873-1d0c35478d1f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Surabaya, ]]></text>
+			</staticText>
+			<textField pattern="dd MMMM yyyy">
+				<reportElement x="445" y="40" width="110" height="20" uuid="70b92316-24e5-4b31-9759-e137f6ef829e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TanggalCetak}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="395" y="60" width="150" height="20" uuid="09d17d0c-a63e-4628-98e6-1200b2184d28"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kepala Toko,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="120" width="150" height="20" uuid="74e300d8-3486-425b-8d7d-5a676b9117d9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Husain Asrarillah]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

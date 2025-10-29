@@ -1,5 +1,3 @@
----
-
 # Laporan Implementasi Java Persistence API (JPA)
 
 ## I. Konfigurasi Awal dan Pembuatan Entitas ⚙️
